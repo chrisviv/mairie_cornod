@@ -177,3 +177,66 @@ i.fa-chevron-right, i.fa-chevron-left{
     padding: 18px 0;
 }
 /* fin header */
+/* barre de navigation */
+#headSide  {
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+#headSide .widgettitle{
+    display:none;
+}
+/* part meteo */
+.wp-image-345{
+    width: 50px;
+    height: 50px;
+}
+#nav_menu-6, #nav_menu-5{
+    display: flex;
+}
+/* part nav */
+.menu-menu-gauche-container, .menu-menu-droite-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+#menu-menu-gauche, #menu-menu-droite{
+    list-style-type: none;
+    color: var(--bs-black);
+    font-family: 'Rubik', sans-serif;
+}
+#menu-menu-gauche{
+    display: flex;
+    gap: 5px;
+}
+#menu-menu-droite{
+    display: flex;
+    gap: 40px;
+}
+/* menu gauche */
+#menu-item-566, #menu-item-565, #menu-item-567 {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-left: 50px;
+    color: var(--bs-black);
+}
+#menu-item-566::before, #menu-item-565::before, #menu-item-567::before,#menu-item-568::before, #menu-item-569::before, #menu-item-570::before{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 6px;
+    background: var(--bs-greenIcon);
+    top: 75px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+/* menu droit */
+#menu-item-568, #menu-item-569, #menu-item-570 {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--bs-black);   
+}
