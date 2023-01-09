@@ -17,3 +17,163 @@ body{
     margin: 0;
     padding: 0;
 }
+
+/* part header bottom */
+#headerBottom{
+    width:100% ;
+    display: flex;
+}
+#headerBottom>.boxHeaderBottom>img{
+    width: 100vw;
+    height: 90vh;
+    position: relative;
+    object-fit: cover;
+    padding: 0 40px 0 40px;
+} 
+.boxHeaderBottom{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.boxHeaderBottom>.titleCornod{
+    font-size: 4.5rem;
+    width: 30%;
+    font-family: 'Encode-Sans-Condended', serif;
+    position: absolute;
+    z-index: 1;
+    color: var(--bs-white);
+    margin-top: 10px;
+}
+/* box Actu Express */
+.boxClicExpress{
+    width: 400px;
+    height: 235px;
+    position:absolute;
+    content: "";
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 6px 5px 5px 0px rgba(0,0,0,0.75); 
+    bottom: 80px;
+    left: 120px;
+    text-align: center;
+    border-radius: 22px;
+    font-family: 'Rubik', sans-serif;  
+}
+.buttonClicExpress{
+    border: none;
+    border-radius: 50px;
+    background: var(--bs-white);
+    width: 30%;
+    height: 28px;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 50px;
+    box-shadow: 6px 5px 5px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+.buttonClicExpress:hover{
+    background: var(--bs-bleuAction);
+    color: var(--bs-white);
+    font-weight: 600;
+}
+.boxClicExpress>.titleClicExpress{
+    font-size: 1.5rem;
+}
+.boxClicExpress>.dateClicExpress{
+    font-size: 0.875rem;
+    font-weight: 100;
+}
+.boxClicExpress>.descClicExpress{
+    font-size: 1rem;
+}
+i.fa-chevron-right, i.fa-chevron-left{
+    padding: 0 35px;
+    font-size: 25px;
+}
+/* title En un clic */
+#boxUnderHearderClic{
+    width: 30%;
+    margin-left: 40px;
+}
+#boxUnderHearderClic>.underTitleHeader, #boxUnderHearderClic>.underTitleClic{
+    font-size:1.5rem;
+    font-family: 'Rubik', sans-serif;
+    color: var(--bs-black);
+}
+#boxUnderHearderClic>.underTitleClic{
+    font-weight: 100;
+    margin-top: -25px;
+    color: var(--bs-black);   
+}
+#boxUnderHearderClic>.underTitleClic::before{
+    position: absolute;
+    content: "";
+    background: rgba(132, 186, 64, 0.3); 
+    width: 20%;
+    height: 30px;
+    color: var(--bs-black);
+    left: 40px;
+} 
+/* part En un Clic  */
+#boxUnClic{
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+}
+#boxClicTablet1,#boxClicTablet2{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#contenairClic1, #contenairClic2,#contenairClic3, #contenairClic4{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cercleAssos, .cercleNum, .cercleGarde, .cercleEglise,.cercleLocation,.cercleCompte, .cercleDroits, .cercleGestion {
+    width: 90px;
+    height: 90px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+    border: 1px solid var(--bs-blachMiddleHot);
+    background: var(--bs-white);
+    position: relative;
+}
+.fa-people-group, .fa-square-phone, .fa-church,.fa-building-columns,.fa-scale-balanced,.fa-trash-can,.fa-key,.fa-staff-snake,.fa-user-doctor{
+   font-size: 40px;
+   color: #84BA40; 
+}
+.assos, .numero, .pharmGarde, .church,.location, .compte, .droits, .gestion{
+    font-family: 'Rubik', sans-serif;
+    font-size: 0.875rem;
+    text-align: center;
+}
+.assos::before,.numero::before,.pharmGarde::before, .church::before, .location::before,.compte::before,.droits::before,.gestion::before{
+    width: 50px;
+    height: 4px;
+    background-color: #84BA40;
+    position: absolute;
+    content: "";
+    bottom: -30px;
+    right: 20px;
+    border-radius: 10px;
+}
+/* .groupGarde{
+    width: 100%;
+    height: 14vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+} */
+.gestion, .droits, .compte,.pharmGarde,.numero, .location, .assos, .church{
+    width: 230px;
+    margin-bottom: -63px;
+    padding: 18px 0;
+}
+/* fin header */
