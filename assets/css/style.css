@@ -40,6 +40,7 @@ body{
     font-size: 20px;
     cursor: pointer;
 } */
+
 /* PARTIE HEADER */
 #header{
     width: 100vw;
@@ -247,6 +248,7 @@ i.fa-chevron-right, i.fa-chevron-left{
     padding: 18px 0;
 }
 /* fin header */
+
 /* barre de navigation */
 #headSide  {
     width: 100%;
@@ -309,4 +311,569 @@ i.fa-chevron-right, i.fa-chevron-left{
     font-weight: 600;
     font-size: 1rem;
     color: var(--bs-black);   
+}
+
+
+/* section bienvenue sur votre commune */
+#mainCommune{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#boxTitleCommune{
+    width: 100vw;
+    display: flex;
+    position:relative;
+    height: 12vh;
+    margin-top: 40px;
+} 
+#boxTitleCommune::before{
+    width: 310px;
+    height: 34px;
+    background: rgba(132, 186, 64, 0.3);
+    display: flex;
+    justify-content: center; 
+    position: absolute;
+    content: "";
+    left: 35px;
+    top: 26px;
+}
+#boxTitleCommune>.titleCommune, .titleCom{
+    width: 100%;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.25rem;
+    color: var(--bs-black);
+}
+.titleCommune{
+    padding-left:10px;
+}
+.titleCom{
+    padding-left: 70px;
+    margin-top: 45px;
+    display: flex;
+    position: absolute;
+}
+/* part group Img */
+#boxImgCornod{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 0 10px;
+}
+#boxImgCornod>.imgCornod{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+#boxImgCornod::before{
+    position: absolute;
+    content: "Cornod";
+    width: 95%;
+    height: 30px;
+    font-family: 'Metrophobic', sans-serif;
+    color: var(--bs-black);
+    background: rgba(217, 217, 217, 0.6);
+    z-index: 2222;
+    margin-top: -2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paragraphCommune{
+    width: 100%;
+    margin-top: 10px;
+    font-family: 'Metrophobic', sans-serif;
+    font-size: 0.813rem;
+    line-height: 1rem;
+    padding: 5px 10px;
+}
+.boxBtnVoirPlus{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 10px;
+    margin-top: -20px;
+}
+.btnVoirPlus{
+    width: 90px;
+    height: 30PX;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    border: none;
+    font-family: 'Metrophobic', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+/* part group1 imgage commune */
+#contenairGroup1{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+#contenairGroup1>.groupImgHameau{
+    width: 100%;
+    display: flex;
+    gap: 3px;
+}
+.groupImgHameau{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.groupImgHameau>.imgSanthonnax, .groupImgHameau>.imgTurgon{
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+}
+#boxImgChateau > .imgChateau {
+    width: 100%;
+    height: 40vh;
+    padding: 5px 0;
+    object-fit: cover;
+}
+/* part group 2 image commune */
+#contenairGroup2{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 0 10px;
+}
+#contenairGroup2>.groupParaHameau{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+#contenairGroup2>.imgVillette{
+    width: 100%;
+    object-fit: cover;
+    height: 25vh;
+    position: relative;
+    padding: 5px 0px;
+}
+.imgVillette::before{
+    position: absolute;
+    content: "Villette";
+    font-family: 'Metrophobic', sans-serif;
+    color: var(--bs-black);
+    background: rgba(217, 217, 217, 0.6);
+    z-index: 33333;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contenairGroup2>.groupParaHameau>.paraBoxGroupImg2{
+    width: 100%;
+    padding: 0 5px;
+    font-size: 0.813rem;
+    text-align: justify;
+}
+#contenairGroup2>.groupParaHameau>.imgThoregna{
+    width: 100%;
+    object-fit: cover;
+    height: 25vh;
+    padding: 0 5px
+}
+#boxGroupImg>#contenairGroup2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;
+}
+#contenairGroup2>.paraBoxGroupImg{
+    width: 90%;
+    margin-left: 10px;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-family: 'Metrophobic', sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+}
+#contenairGroup2>.btnBoxGroupImg{
+    width: 90px;
+    height: 26px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    font-family: 'Metrophobic', sans-serif;
+    font-size: 0.75rem;
+    background: var(--bs-white);
+    color: var(--bs-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: -12px;
+    margin-left: 80px;
+    margin-bottom: 23px;
+    padding: 3px;
+}
+#boxImgChateau{
+    width: 100%;
+    height:auto;
+    position: relative;
+}
+/* .imgChateau::before{
+    position: absolute;
+    content: "Château de Cornod";
+    width: 95%;
+    height: 35px;
+    font-family: 'Metrophobic', sans-serif;
+    color: var(--bs-black);
+    background: rgba(217, 217, 217, 0.6); 
+    margin-top: 55px; 
+    margin-left: 10px;
+    z-index: 4444444444444;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+
+
+/* footer */
+/* part FOOTER */
+#footer{
+    width: 100vw;
+    min-height: 30vh;
+    background:#84ba40ab;
+}
+#groupFooterTop{
+    width: 100%;
+    display: flex;
+    padding: 20px 10px;
+    gap: 5px;
+    font-family: 'Rubik', sans-serif;
+}
+/* part footer Logo */
+#groupFooterTop>.footerLogoCornod{
+    width: 25vw;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+} 
+#groupFooterTop>.footerLogoCornod>.logoCornod{
+    width: 135px;
+    height: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* part footer contact Mairie */
+#groupFooterTop>.footerContactMairie, #groupFooterTop>.footerHoraireMairie{
+    width: 35%;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#groupFooterTop>.footerContactMairie>.titleFooterContact, #groupFooterTop>.footerHoraireMairie>.titleFooterHoraire{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--bs-black);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+#groupFooterTop>.footerContactMairie>.adressFooterContact{
+    width: 30%;
+    font-size: 0.875rem;
+}
+#groupFooterTop>.footerContactMairie>.boxTelFooter{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+}
+#groupFooterTop>.footerContactMairie>.telFooterContact{
+    height: 25px;
+    font-size: 1rem;
+}
+i.fa-phone-volume, i.footerMail{
+    width: 40px;
+    height: 40px;
+    color: var(--bs-greenIcon);
+    cursor: pointer;
+    border-radius: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+i.fa-phone-volume:hover, i.footerMail:hover{
+    background-color: var(--bs-greenIcon);
+    color: var(--bs-white);
+    transition: 0.1ms;
+}
+i.fa-phone-volume{
+    margin-bottom: 5px;
+}
+i.footerMail{
+    margin-top: -15px;
+}
+/* part footer Horaire */
+.contenairHoraire>.dayWeek{
+    font-size: 0.875rem;
+}
+#groupFooterTop>.footerHoraireMairie>.boxMailFooter{
+    height: 25%;
+    display: flex;
+    align-items: center;
+    gap: 10px;  
+} 
+.footerHoraireMairie>.boxMailFooter>.mailFooterHoraire{
+    margin-top: -15px;
+    text-decoration: none;
+    color: var(--bs-black);
+    font-size: 1rem;
+}
+/* icon to up page */
+#groupFooterTop>.boxReturnUp{
+    width: 10vh;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 20px;
+}
+/* icon to up page */
+.iconBackToTop{
+    /* width: 35px;
+    height: 35px; */
+    border-radius: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 9px 11px;
+}
+.iconBackToTop:hover{
+    background: #84BA40;
+    transition: 0.1ms;
+}
+.fa-arrow-up{
+    color: #84BA40;
+}
+.fa-arrow-up:hover{
+    color: var(--bs-white);
+    transition: 0.1ms;
+}
+/* part footer buttom */
+#footerBottom{
+    width: 100%;
+    min-height: 5vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bs-white);
+    font-family: 'Rubik', sans-serif;
+}
+#footerBottom>.footerMentions,
+#footerBottom>.footerPolitique,#footerBottom>.footerCopyright{
+    width: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: var(--bs-black);
+}
+#footerBottom>.footerMentions{
+    width: 25%;
+}
+#footerBottom>.footerCopyright{
+    width: 25%;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+#footerBottom>.footerDesign{ 
+    width: 32%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--bs-black);
+}
+#footerBottom>.footerDesign,#footerBottom>.footerMentions,#footerBottom>.footerPolitique{
+    border-right-style: dashed;
+    border-color: #84BA40;
+    height: 30px;
+    font-size: 0.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+.fa-heart, 
+.fa-copyright{
+    color: #84BA40;
+    padding: 2px 10px;
+}
+.footerSpan{
+    display: block;
+}
+@media screen and (max-width:1024px){ 
+/* part Footer Contact media query 1024px*/
+#groupFooterTop{
+    min-height: 34vh;
+}
+#groupFooterTop>.footerLogoCornod{
+    height: 20vh;
+}
+.footerLogoCornod>.logoCornod{
+    width: 105px;
+    height: 105px;
+} 
+/* contenair footer contact Mairie */
+ #groupFooterTop>.footerContactMairie{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+#groupFooterTop>.footerContactMairie>.adressFooterContact{
+    width: 65%;
+    font-size: 0.875rem;
+}
+i.fa-phone-volume{
+    margin-left: 15px;
+}
+i.fa-phone-volume:hover, i.footerMail:hover{
+    background-color: var(--bs-greenIcon);
+    color: var(--bs-white);
+    transition: 0.1ms;
+}
+#groupFooterTop>.footerHoraireMairie{
+    width: 50%;  
+} 
+/* contenair footer horaire Mairie */
+.contenairHoraire{
+    width: 87%;
+}
+#groupFooterTop>.footerContactMairie>.boxTelFooter,#groupFooterTop > .footerHoraireMairie > .boxMailFooter{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#groupFooterTop>.footerContactMairie>.boxTelFooter{
+  height: 42%;
+}  
+#groupFooterTop > .footerHoraireMairie > .boxMailFooter {
+    height: 38%;
+}
+/* .adressFooterContact{
+    width: 61%;
+    text-align: start;
+    margin-bottom: 70px;
+} */
+ #footerBottom>.footerMentions,
+#footerBottom>.footerPolitique,#footerBottom>.footerCopyright,#footerBottom>.footerDesign{
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+.footerSpan {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 100;
+}
+}
+@media screen and (max-width:375px){ 
+/* part FOOTER */
+/* part footer Logo */
+#groupFooterTop{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0;
+}
+#groupFooterTop>.footerLogoCornod{
+    width: 100%;
+    height: 10vh;
+    cursor: pointer;
+}
+#groupFooterTop > .footerContactMairie > .adressFooterContact {
+    width: 45%;
+    font-size: 0.875rem;
+    text-align: inherit;
+}
+/* part Footer Contact */
+#groupFooterTop>.footerContactMairie{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+}
+#groupFooterTop>.footerHoraireMairie{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+}
+.titleFooterContact, .titleFooterHoraire{
+    font-size: 1.3rem;
+}
+.contenairHoraire {
+    width: 87%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* part footer Horaire */
+#groupFooterTop > .footerHoraireMairie > .boxMailFooter {
+    height: 38%;
+    display: flex;
+    justify-content: center;
+} 
+#groupFooterTop > .boxReturnUp {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: flex-end;
+}
+/* part footer buttom */
+#footerBottom{
+    min-height: 5vh;
+}
+#footerBottom>.footerMentions,
+#footerBottom>.footerPolitique,#footerBottom>.footerCopyright,#footerBottom>.footerDesign{
+    font-size: 0.625rem;
+    font-weight: 300;
+}
+#footerBottom>.footerMentions{
+    width: 22%;
+}
+#footerBottom>.footerPolitique{
+    width: 27%;
+}
+#footerBottom>.footerCopyright{
+    width: 10%;
+}
+#footerBottom>.footerDesign{
+    width: 30%;
+    font-size: 0.50rem;
+}
+.footerSpan{
+    display: none;
+}
 }
