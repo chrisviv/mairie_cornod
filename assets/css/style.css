@@ -1456,7 +1456,961 @@ i.fa-phone-volume:hover, i.footerMail:hover{
 }
 }
 @media screen and (max-width:375px){ 
-/* part FOOTER */
+/* section bienvenue sur votre commune */
+#mainCommune{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#boxTitleCommune{
+    width: 100vw;
+    display: flex;
+    position:relative;
+    height: 12vh;
+    margin-top: 40px;
+} 
+#boxTitleCommune::before{
+    width: 310px;
+    height: 34px;
+    background: rgba(132, 186, 64, 0.3);
+    display: flex;
+    justify-content: center; 
+    position: absolute;
+    content: "";
+    left: 35px;
+    top: 26px;
+}
+#boxTitleCommune>.titleCommune, .titleCom{
+    width: 100%;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.25rem;
+    color: var(--bs-black);
+}
+.titleCommune{
+    padding-left:10px;
+}
+.titleCom{
+    padding-left: 70px;
+    margin-top: 45px;
+    display: flex;
+    position: absolute;
+}
+/* part group Img */
+#boxImgCornod{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 0 10px;
+}
+#boxImgCornod>.imgCornod{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+#boxImgCornod::before{
+    position: absolute;
+    content: "Cornod";
+    width: 95%;
+    height: 30px;
+    font-family: 'Metrophobic', sans-serif;
+    color: var(--bs-black);
+    background: rgba(217, 217, 217, 0.6);
+    z-index: 2222;
+    margin-top: -2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paragraphCommune{
+    width: 100%;
+    margin-top: 10px;
+    font-family: 'Metrophobic', sans-serif;
+    font-size: 0.813rem;
+    line-height: 1rem;
+    padding: 5px 10px;
+}
+.boxBtnVoirPlus{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 10px;
+    margin-top: -20px;
+}
+.btnVoirPlus{
+    width: 90px;
+    height: 30PX;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    border: none;
+    font-family: 'Metrophobic', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+/* part group1 imgage commune */
+#contenairGroup1{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+#contenairGroup1>.groupImgHameau{
+    width: 100%;
+    display: flex;
+    gap: 3px;
+}
+.groupImgHameau{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.groupImgHameau>.imgSanthonnax, .groupImgHameau>.imgTurgon{
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+}
+#boxImgChateau > .imgChateau {
+    width: 100%;
+    height: 40vh;
+    padding: 5px 0;
+    object-fit: cover;
+}
+/* part group 2 image commune */
+#contenairGroup2{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 0 10px;
+}
+#contenairGroup2>.groupParaHameau{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+#contenairGroup2>.imgVillette{
+    width: 100%;
+    object-fit: cover;
+    height: 25vh;
+    position: relative;
+    padding: 5px 0px;
+}
+.imgVillette::before{
+    position: absolute;
+    content: "Villette";
+    font-family: 'Metrophobic', sans-serif;
+    color: var(--bs-black);
+    background: rgba(217, 217, 217, 0.6);
+    z-index: 33333;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contenairGroup2>.groupParaHameau>.paraBoxGroupImg2{
+    width: 100%;
+    padding: 0 5px;
+    font-size: 0.813rem;
+    text-align: justify;
+}
+#contenairGroup2>.groupParaHameau>.imgThoregna{
+    width: 100%;
+    object-fit: cover;
+    height: 25vh;
+    padding: 0 5px
+}
+#boxGroupImg>#contenairGroup2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;
+}
+#contenairGroup2>.paraBoxGroupImg{
+    width: 90%;
+    margin-left: 10px;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-family: 'Metrophobic', sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+}
+#contenairGroup2>.btnBoxGroupImg{
+    width: 90px;
+    height: 26px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    font-family: 'Metrophobic', sans-serif;
+    font-size: 0.75rem;
+    background: var(--bs-white);
+    color: var(--bs-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: -12px;
+    margin-left: 80px;
+    margin-bottom: 23px;
+    padding: 3px;
+}
+#boxImgChateau{
+    width: 100%;
+    height:auto;
+    position: relative;
+}
+/* .imgChateau::before{
+    position: absolute;
+    content: "Château de Cornod";
+    width: 95%;
+    height: 35px;
+    font-family: 'Metrophobic', sans-serif;
+    color: var(--bs-black);
+    background: rgba(217, 217, 217, 0.6); 
+    margin-top: 55px; 
+    margin-left: 10px;
+    z-index: 4444444444444;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* PART VOTRE MAIRIE */
+#mainMairie{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10px;
+}
+#boxTitleMairie{
+    width: 100vw;
+    display: flex;
+    position:relative;
+    height: 12vh;
+}
+#boxTitleMairie::before{
+    width: 325px;
+    height: 34px;
+    background: rgba(132, 186, 64, 0.3);
+    display: flex;
+    justify-content: center; 
+    position: absolute;
+    content: "";
+    left: 20px;
+    top: 36px;
+}
+#boxTitleMairie>.titleMairie, .titleMair{
+    width: 100%;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.25rem;
+    color: var(--bs-black);
+}
+.titleMairie{
+    padding-left:10px;
+}
+.titleMair{
+    /* width: unset !important; */
+    padding-left: 30px;
+    margin-top: 39px;
+    display: flex;
+}
+#boxMairie{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#boxImgMairie{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+#boxImgMairie>.imgMairie{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+#boxParaMairie{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom:  25px;
+}
+.paraMairie{
+    width: 100%;
+    text-align: justify;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 300;
+    line-height: 1.125rem;
+}
+.imgMapMairie{
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+}
+/* PART TIME AND CONTACT */
+#contenairGroupHoraire, #contenairGroupContact{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+#boxHoraireMairie, #boxContactMairie{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    justify-content: space-evenly;
+}
+.horaireTitle,.contactTitle{
+    font-family: 'Merriweather Sans', sans-serif;
+    color: var(--bs-black);
+    font-size:1.25rem;
+    text-align: center;
+    margin-top: 5px;
+}
+.horaireTitle, .contactTitle{ 
+    width: 80%;
+}
+i.fa-clock,i.fa-address-card{
+    padding-right: 5px;
+}
+.paraHoraire,.paraContact{
+    width: 100%;
+    margin: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size:0.813rem;
+    color:var(--bs-black);
+}
+.paraHor1, .paraCont1{
+    padding-left: 20px;
+    padding-top:35px;
+    font-weight: 300;
+}
+.paraHor2,.paraHor3, .paraHor4,.paraHor5{
+    padding-left: 20px;
+}
+.paraHor2,.paraHor3, .paraHor4,.paraHor5{
+    font-size: 1rem;
+    margin-top: 10px;
+}
+.paraHor20,.paraHor30,.paraHor40,.paraHor50{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 0.875rem;
+    font-weight: 300;
+}
+.paraAdress,.paraTel, .paraMail, .paraCont2{
+    margin-left: 15px;
+    /* font-size: 0.813rem; */
+    font-weight: 300;
+}
+.paraCont1{
+    margin-left: 5px;
+}
+.paraCont2{
+    width: 80%;
+    margin-bottom: 15px;
+    font-size: 0.875rem;
+    display: flex;
+    justify-content: center;
+}
+#boxContactAdress,#boxContactTel,#boxContactMail{
+    width: 100%;
+    height: 5vh;
+    display: flex;   
+    justify-content:flex-start;
+    align-items: center;
+}
+i.fa-phone-volume,i.fa-envelopes-bulk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--bs-black);
+    background: var(--bs-white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    margin-left: 25px;
+}
+i.fa-phone-volume{
+    width: 30px;
+    height: 30px;}
+i.fa-envelopes-bulk{
+    width: 38px;
+    height: 30px;
+}
+.paraAdress{
+    width: 40%;
+}
+.iconAdress{
+    width: 40px;
+    height: 40px;
+    margin: 13px 0 0 20px;
+    margin-left: 20px;
+}
+.paraMail{
+    text-decoration:none;
+}
+#boxBtnContact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnContact{
+    width: 100px;
+    height: 30px;
+    padding: 5px 5px;
+    font-family: 'Metrophobic', sans-serif;
+    font-size: 0.688rem;
+    font-weight: 500;
+    border:2px solid var(--bs-white);
+    color: var(--bs-black);
+    background:var(--bs-white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    cursor: pointer;   
+}
+
+
+/* SECTION ACTUS */
+#boxTitleActualite{
+    width: 100vw;
+    display: flex;
+    position:relative;
+    height: 12vh;
+    margin-top: 30px;
+}
+#boxTitleActualite::before{
+    width: 325px;
+    height: 34px;
+    background: rgba(132, 186, 64, 0.3);
+    display: flex;
+    justify-content: center; 
+    position: absolute;
+    content: "";
+    left: 20px;
+    top: 36px;
+}
+#boxTitleActualite>.titleActualite, .titleActu{
+    width: 100%;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.25rem;
+    color: var(--bs-black);
+}
+.titleActualite{
+    padding-left:10px;
+}
+.titleActu{
+    /* width: unset !important; */
+    padding-left: 30px;
+    margin-top: 39px;
+    display: flex;
+}
+/* PARTIE NEWSLETTERS */
+#boxNewsletters{
+    width: 100%;
+    height: 20vh;
+    padding: 0 10px;
+}
+.contenairNewsletters{
+    width: 100%;
+    height: 300px;
+    clip-path: polygon(0 0, 100% 0, 100% 26%, 0 50%);  
+    background: #0D76AF;
+    border-radius: 10px;
+    color: var(--bs-white);
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.titleNewsletters{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 5px;
+    display: flex;
+}
+.fa-paper-plane{
+    margin-top: 30px;
+    padding: 5px;
+}
+.paraNewsletters{
+    font-family: 'Metrophobic', sans-serif;
+    font-size: 0.66rem;
+    margin-left: 40px;
+    margin-top: 35px;
+}
+.btnNewsletters{
+    width: 110px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Metrophobic', sans-serif;
+    font-size: 0.75rem;
+    color: var(--bs-black);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background: var(--bs-white);
+    margin-left: 40px;
+    margin-top: 15px;
+}
+#boxTitleALaUne{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    position:relative;
+    height: 12vh;
+}
+#boxTitleALaUne::before{
+    width: 250px;
+    height: 34px;
+    background: rgba(132, 186, 64, 0.3);
+    display: flex;
+    justify-content: flex-end; 
+    position: absolute;
+    content: "";
+    left: 30px;
+    top: 36px;
+    margin-left: 75px;
+}
+#boxTitleALaUne>.titleALaUne, .titleUne{
+    width: 100%; font-family: 'Merriweather Sans', sans-serif;
+    color: var(--bs-black);
+    display: flex;
+    justify-content: flex-end;
+    margin-left: -20px;
+}
+.titleALaUne{
+    font-size: 1.25rem;
+}
+.titleUne{
+    margin-top: 48px;
+    font-weight: 300;
+}
+/* Part boxActuCommune */
+#boxActuCommune{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px 0px;
+}
+#boxActuCommune>.imgActuCommune{
+    width: 100%;
+    padding: 0px 10px;
+    height: 25vh;
+    position: relative;
+    object-fit: cover;
+    display: flex;
+    align-items: flex-end;
+}
+#boxActuCommune::before{
+    position: absolute;
+    content: "ACTU DE LA COMMUNE";
+    width: 95%;
+    height: 35px;
+    font-family: 'Metrophobic', sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    color:var(--bs-white);
+    background: rgba(217, 217, 217, 0.5);
+    z-index: 2222;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* part boxActu 1 */
+#boxActuCom1, #boxActuCom2{
+    width: 100%;
+    min-height: 20VH;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 10px;
+}
+#contenairActuCom1>.imgActuCom1,#contenairActuCom2>.imgActuCom2{ 
+    position: relative;
+    width: 100%;
+    height: 25vh;   
+    object-fit: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px 0;
+}
+#boxActuCom1::before,#boxActuCom2::before{
+    position: absolute;
+    content: "Plus d'info";
+    width: 94%;
+    height: 35px;
+    font-family: 'Metrophobic', sans-serif;
+    font-size: 0.813rem;
+    font-weight: 300;
+    color:var(--bs-black);
+    background:var(--bs-white);
+    z-index: 2222;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--bs-bleuAction);
+}
+#contenairActuCom1, #contenairActuCom2{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.titleActuCom1, .titleActuCom2{
+    position: absolute;
+    width: 84%;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: var(--bs-white);
+    font-size: 1.25rem;
+    text-align: center;
+}
+.timeActuCom1, .timeActuCom2{
+    width: 58px;
+    height: 182px;
+    background: #0D76AF;
+    color: var(--bs-white);
+    font-size: 1.5rem;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 17px;
+}
+/* PART TITLE Actu ASSOS */
+#boxActuAssos{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 10px;
+}
+.contenairActuAssosStart, .contenairActuAssosEnd{
+    width: 100%;
+    height: 300px;
+    background: rgb(132, 186, 64);
+}
+.contenairActuAssosStart{
+    clip-path: polygon(0 0, 0 35%, 100% 0);
+}
+.contenairActuAssosEnd{
+    clip-path: polygon(0 100%, 100% 65%, 100% 100%);
+    margin-top: 35px;
+}
+.contenairActuAssosEnd{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenairActuAssosStart>.titleAssosStart{
+    color: var(--bs-white);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 0 10px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+ .contenairActuAssosEnd>.titleAssosEnd {
+    color: #000000;
+    margin-top: 280px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+} 
+.btnActuAssos{
+    border: 2px solid var(--bs-black);
+    z-index: 5555555555;
+}
+/* PART ACTU ASSOS */
+#contenairAssos{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.boxAssociation{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    margin-top: 40px;    
+}
+.boxAssos1>.imgAssos1,.boxAssos2>.imgAssos2,.boxAssos3>.imgAssos3{
+    object-fit: cover;
+    padding: 10px 0;
+    width: 110px;
+    height: 130px;
+}
+.boxAssos1>.titleAssos1,.boxAssos2>.titleAssos2,.boxAssos3>.titleAssos3{
+    color: var(--bs-black);
+    width: 50%;
+    display: flex;
+    justify-content:end;
+}
+.boxAssos1>.paraAssos1,.boxAssos2>.paraAssos2,.boxAssos3>.paraAssos3{
+    width: 50%;
+    margin-top: 60px;
+    margin-left: 10px;
+    font-size: 0.875rem;
+    font-family: 'Metrophobic', sans-serif;
+    cursor: pointer;
+}
+.boxAssos1>.dateAssos1,.boxAssos2>.dateAssos2,.boxAssos3>.dateAssos3{
+    width: 14%;
+    display: flex;
+    flex-direction: row;
+    background: rgb(132, 186, 64);
+    font-family: 'Metrophobic', sans-serif;
+    justify-content: center;
+    padding: 20px 22px;
+    color: var(--bs-white);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+/* PART TITLE ACTU AGENDA */
+#boxTitleAgenda{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    position:relative;
+    height: 12vh;
+}
+#boxTitleAgenda::before{
+    width: 313px;
+    height: 34px;
+    background: rgba(132, 186, 64, 0.3);
+    display: flex;
+    justify-content: flex-end; 
+    position: absolute;
+    content: "";
+    left: -33px;
+    top: 36px;
+    margin-left: 75px;
+}
+#boxTitleAgenda>.titleAgenda, .titleManquer{
+    width: 100%; font-family: 'Merriweather Sans', sans-serif;
+    color: var(--bs-black);
+    display: flex;
+    justify-content: flex-end;
+    margin-left: -20px;
+}
+.titleAgenda{
+    font-size: 1.25rem;
+}
+.titleManquer{
+    margin-top: 48px;
+    font-weight: 300;
+}
+/* PART ACTU AGENDA */
+#boxActuAgenda{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+.contenairAgenda1,.contenairAgenda2,.contenairAgenda3{
+    font-family: 'Metrophobic', sans-serif;
+    color: var(--bs-white);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.contenairAgenda1{
+    width: 100%;
+    display: flex;
+    padding: 20px 0;
+}
+.contenairAgenda2, .contenairAgenda3{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;    align-items: flex-end;
+    padding: 20px 0px;
+}
+.imgAgenda1{
+    width: 235px;
+    height: 180px;
+    object-fit: cover;
+}
+.agenda1>.dateAgenda1{
+    width: 130px;
+    height: 180px;
+    background:#0D76AF;
+    text-align: center;
+    padding: 70px 0px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 0px;
+    cursor: pointer;
+}
+.agenda1>.dateAgenda1:hover{
+    background: var(--bs-white);
+    color: var(--bs-black);
+    border: 1px solid var(--bs-bleuAction);
+    font-weight: 300;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-weight: 800;}
+.imgAgenda2,.imgAgenda3{
+    width:175px;
+    height: 133px;
+    object-fit: cover;
+}
+.boxAgenda2,.boxAgenda3{
+    width: 75%;
+    height: 20vh;
+    display: flex;
+}
+.boxAgenda2>.dateAgenda2,.boxAgenda3>.dateAgenda3{
+    width: 55px;
+    height: 125px;
+    background:#0D76AF;
+    text-align: center;
+    border-radius: 0px;
+    display: flex;
+    padding: 25px 0px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 0px;
+}
+.boxTitleAgenda2,.boxTitleAgenda3{
+    width: 50%;
+    height: 100%;
+    /* background: #84BA40; */
+    display: flex;
+    justify-content: center;
+}
+.boxTitleAgenda2>.paraAgenda2,.boxTitleAgenda3> .paraAgenda3{
+    color: var(--bs-black);
+    font-family: 'Metrophobic', sans-serif;
+    font-size: 0.875rem;
+    width: 30%;
+    text-align: end;
+    font-weight: 300;
+}
+.boxTitleAgenda2>.btnAgenda2,.boxTitleAgenda3>.btnAgenda3{
+    width: 107px;
+    height: 30px;
+    background: rgba(13, 118, 175, 1);
+    border: none;
+    border-radius: 50px;
+    color:var(--bs-white);
+    font-weight: 600;
+    margin-top: 100px;
+    cursor: pointer;
+}
+.boxTitleAgenda2>.btnAgenda2:hover,.boxTitleAgenda3>.btnAgenda3:hover{
+    background: var(--bs-white);
+    color: var(--bs-black);
+    border: 1px solid var(--bs-bleuAction);
+    font-weight: 300;
+}
+/* PART TITLE END SECTION ACTU */
+#boxTousActuAgenda{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#boxTousActuAgenda>.contenairTousActu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+#boxTousActuAgenda>.contenairTousAgenda{
+    width: 100%;
+    height: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 48px;
+    margin-top: -10px;
+}
+.titleTousActu,.titleTousAgenda{
+    font-size: 1rem;
+    font-family: 'Merriweather Sans', sans-serif;
+} 
+.titleTousActu{
+    padding: 0 60px; 
+    font-weight: 300;
+}
+.titleTousAgenda{
+   font-weight: 800;
+   position: relative;
+}
+.titleTousAgenda::before{
+    position: absolute;
+    content: "";
+    width: 256px;
+    height: 2px;
+    background:#0D76AF;
+    top:25px;
+    left:-50px;
+}
+.fa-calendar-days{
+    font-size: 30px;
+    color: #0d76af;
+    position: relative;
+}
+.fa-calendar-days::before{
+    position:absolute;
+    content: "";
+    border-radius: 50px;
+    background: var(--bs-white);
+    width: 30px;
+    height: 30px;
+    padding: 10px 10px;
+    text-align: center;
+    margin: auto;
+    transform: translate(0%,-50%);
+    top:7px;
+    left: 3px;
+    background: var(--bs-white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+
+
+    /* part FOOTER */
 /* part footer Logo */
 #groupFooterTop{
     width: 100vw;
