@@ -1,0 +1,19 @@
+/* color */
+:root{
+    --bs-greenIcon:#84BA40;
+    --bs-bleuAction:#6eb2e3;
+    --bs-black:#000000;
+    --bs-blackMiddle:rgba(0, 0, 0, 0.555);
+    --bs-blachMiddleHot:rgba(0, 0, 0, 0.3);
+    --bs-white:#ffffff;
+    --bs-greyMiddleBas:rgba(255, 255, 255, 0.712);
+    --bs-greyMiddle:rgba(255, 255, 255, 0.5);
+    --bs-greyMiddleHot:rgba(255, 255, 255, 0.3);
+}
+/* general */
+body{
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
