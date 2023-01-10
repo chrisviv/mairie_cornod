@@ -254,41 +254,36 @@ i.fa-chevron-right, i.fa-chevron-left{
     width: 100vw;
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 }
 #boxTitleCommune{
-    width: 100vw;
-    display: flex;
-    position:relative;
-    height: 12vh;
-    margin-top: 40px;
-} 
-#boxTitleCommune::before{
-    width: 310px;
-    height: 34px;
-    background: rgba(132, 186, 64, 0.3);
-    display: flex;
-    justify-content: center; 
-    position: absolute;
-    content: "";
-    left: 35px;
-    top: 26px;
-}
-#boxTitleCommune>.titleCommune, .titleCom{
     width: 100%;
-    font-family: 'Merriweather Sans', sans-serif;
-    font-size: 1.25rem;
+    height: 20%;
+} 
+#boxTitleCommune>.titleCommune, .titleCom{ 
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.5rem;
     color: var(--bs-black);
 }
 .titleCommune{
-    padding-left:10px;
+    padding-left:40px;
 }
 .titleCom{
     padding-left: 70px;
-    margin-top: 45px;
+    margin-top: -35px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 75px;
+}
+.titleCom::before{
+    width: 412px;
+    height: 34px;
+    background: rgba(132, 186, 64, 0.3);
     display: flex;
     position: absolute;
+    content: "";
+    top: -20px;
+    left: 70px;
 }
 /* part group Img */
 #boxImgCornod{
@@ -491,36 +486,34 @@ i.fa-chevron-right, i.fa-chevron-left{
     padding: 0 10px;
 }
 #boxTitleMairie{
-    width: 100vw;
-    display: flex;
-    position:relative;
-    height: 12vh;
-}
-#boxTitleMairie::before{
-    width: 325px;
-    height: 34px;
-    background: rgba(132, 186, 64, 0.3);
-    display: flex;
-    justify-content: center; 
-    position: absolute;
-    content: "";
-    left: 20px;
-    top: 36px;
+    width: 100%;
+    height: 20%;
 }
 #boxTitleMairie>.titleMairie, .titleMair{
     width: 100%;
-    font-family: 'Merriweather Sans', sans-serif;
-    font-size: 1.25rem;
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.5rem;
     color: var(--bs-black);
-}
+} 
 .titleMairie{
-    padding-left:10px;
+    padding-left:40px;
 }
 .titleMair{
-    /* width: unset !important; */
-    padding-left: 30px;
-    margin-top: 39px;
+    margin-left: 100px;
+    margin-top: -35px;
+    position: relative;
     display: flex;
+    justify-content: flex-start;
+}
+.titleMair::before{
+    width: 412px;
+    height: 34px;
+    background: rgba(132, 186, 64, 0.3);
+    display: flex;
+    position: absolute;
+    content: "";
+    top: -20px;
+    left: -32px;
 }
 #boxMairie{
     width: 100%;
@@ -690,40 +683,39 @@ i.fa-envelopes-bulk{
     border-radius: 50px;
     cursor: pointer;   
 }
-
 /* SECTION ACTUS */
-#boxTitleActualite{
+#mainActualites{
     width: 100vw;
-    display: flex;
-    position:relative;
-    height: 12vh;
-    margin-top: 30px;
+    min-height: 100vh;
 }
-#boxTitleActualite::before{
-    width: 325px;
-    height: 34px;
-    background: rgba(132, 186, 64, 0.3);
-    display: flex;
-    justify-content: center; 
-    position: absolute;
-    content: "";
-    left: 20px;
-    top: 36px;
+#boxTitleActualite{
+    width: 100%;
+    height: 20%;
 }
 #boxTitleActualite>.titleActualite, .titleActu{
-    width: 100%;
-    font-family: 'Merriweather Sans', sans-serif;
-    font-size: 1.25rem;
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.5rem;
     color: var(--bs-black);
 }
 .titleActualite{
-    padding-left:10px;
+    padding-left:40px;
 }
 .titleActu{
-    /* width: unset !important; */
-    padding-left: 30px;
-    margin-top: 39px;
+    margin-left: 100px;
+    margin-top: -35px;
+    position: relative;
     display: flex;
+    justify-content: flex-start;
+}
+.titleActu::before{
+    width: 412px;
+    height: 34px;
+    background: rgba(132, 186, 64, 0.3);
+    display: flex;
+    position: absolute;
+    content: "";
+    top: -20px;
+    left: -32px;
 }
 /* PARTIE NEWSLETTERS */
 #boxNewsletters{
